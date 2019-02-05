@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <title>Digital CLock</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+
+        function startTime() {
+
+            var dateTime = new Date();
+            
+            var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+            var day = dateTime.getDay();
+            var today = dayNames[day];
+
+            var hours = dateTime.getHours();
+            var mins = dateTime.getMinutes();
+            var sec = dateTime.getSeconds();
+        
+            var hours = checkTime(hours);
+            var mins = checkTime(mins);
+            var sec = checkTime(sec);
+
+            if(hours >= 12)
+                var ampm = ' PM'
+            else
+                var ampm = ' AM';
+
+            document.getElementById('Clock').innerHTML = today + ' - ' + hours + ':' + mins + ':' + sec + ' ' + ampm;
+            var t = setTimeout(startTime, 500);
+        }
+
+        function checkTime(i) {
+            if(i < 10)
+                i = '0' + i;
+            return i;
+        }
+
+    </script>
+</head>
+<body onload="startTime()">
+
+    <div class="contaienr">
+        <div class="header">
+            <h1>Glowing Digital Clock</h1>
+        </div>
+        <div class="row">
+            <div id="Clock" class="clock"> </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+</body>
+</html>

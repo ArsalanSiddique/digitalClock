@@ -1,0 +1,42 @@
+//style.css
+
+body {
+    background-color: #000000 !important;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150px;
+    margin: 5% 0 0 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #ffffff;
+    text-align: center;
+    
+}
+.header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 62px;
+}
+.clock {
+    font-family: 'digital-7';
+    font-size: 92px;
+    text-align: center;
+    margin: 15% 0 0 0;
+    color:  #ffffff;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+}
+.ampm {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    float: left;
+    margin: 0 0 0 5%;
+    color:  #ffffff;
+    
+}
